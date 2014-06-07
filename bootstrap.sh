@@ -29,4 +29,11 @@ update-rc.d elasticsearch defaults 95 10
 echo -e "\n\nJAVA_HOME=/usr/lib/jvm/java-7-oracle" >> /etc/environment;
 
 export JAVA_HOME=/usr/lib/jvm/java-7-oracle/ 
+
+apt-get install -y apache2
+
+rm -rf /var/www/html
+
+ln -fs /vagrant /var/www/html
+
  
